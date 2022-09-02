@@ -1,0 +1,36 @@
+.footer-personal {
+    background-color: rgb(77, 77, 77);
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+
+    .bi-whatsapp {
+        @extend .redes;
+        color: #4BCA5A;
+    }
+
+    .bi-twitter {
+        @extend .redes;
+        color: #1A8CD8;
+    }
+
+    .bi-instagram {
+        @extend .redes;
+        color: #AE1179;
+    }
+    .bi-facebook {
+        @extend .redes;
+        color: #1877F2;
+        }
+}
+
+
+.redes {
+    font-size: 30px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+}
