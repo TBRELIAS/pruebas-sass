@@ -1,9 +1,45 @@
 @import "./variables";
-@import "_/mixins"
+@import "./mixins";
+*{
+    @include reset
+}
 @import "./header";
 @import "./main";
 @import "./footer";
 
-*{
-    @include reset
+/* Personalizaciones por agregar a sass */
+
+.copyright {
+    background-color: rgb(95, 95, 95);
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 0%;
+    color: white;
+}
+
+
+.bg-personal {
+    background-color: rgb(184, 134, 204);
+}
+
+.bgc-texto {
+    color: rgb(184, 134, 204);
+}
+
+.letra-personal {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(59, 59, 59);
+}
+
+.btn-primary {
+    margin-top: 20px;
+    background-color: gray;
+    border-color: gray;
+    transition: all 0.2s ease-out;
+}
+
+.btn-primary:hover {
+    background-color: rgb(180, 179, 179);
+    border-color: rgb(175, 164, 164);
+    transform: scale(0.8);
 }

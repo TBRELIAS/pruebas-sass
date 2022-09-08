@@ -1,5 +1,5 @@
 .footer-personal {
-    background-color: rgb(77, 77, 77);
+    background-color: map-get($colores , $key:footer );
     width: 100%;
     height: 120px;
     display: flex;
@@ -7,30 +7,17 @@
     padding-top: 10px;
 
     .bi-whatsapp {
-        @extend .redes;
-        color: #4BCA5A;
+        @include redes ($whatsapp);
     }
 
     .bi-twitter {
-        @extend .redes;
-        color: #1A8CD8;
+        @include redes ($twitter);
     }
 
     .bi-instagram {
-        @extend .redes;
-        color: #AE1179;
+        @include redes ($instagram);
     }
     .bi-facebook {
-        @extend .redes;
-        color: #1877F2;
-        }
-}
-
-
-.redes {
-    font-size: 30px;
-    text-align: center;
-    margin-left: 5px;
-    margin-right: 5px;
-    color: white;
+        @include redes ($facebook);
+    }
 }
